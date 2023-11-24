@@ -51,7 +51,7 @@ const PinSetup = () => {
 
       <Button variant="primary" type="click" className='button' onClick={handleClick} >
       {/* <Link href="/siginin" className='link2'> */}
-         Go to homepage
+         Go to Sign in
           {/* </Link> */}
 
       </Button>
