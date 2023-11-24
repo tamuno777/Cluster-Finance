@@ -34,11 +34,11 @@ export default function HomeDashboard() {
         <div>
           <article  className='second-flex' style={{alignItems:"center"}}>
             <Form>
-            <Dropdown className='phone__select w-100'>
-        <Dropdown.Toggle variant="white" className='diva2 dropdown2 d-flex p-3 border border-gry'  id="dropdown-basic">
+            <Dropdown className='phone__select '>
+        <Dropdown.Toggle variant="white" className='diva2 dropdown2 d-flex p-3 border'  id="dropdown-basic">
           {selectedCountry ? (
             
-            <div className='d-flex coun' style={{height:"20px",backgroundColor:""}}>
+            <div className='d-flex ' style={{height:"20px",backgroundColor:""}}>
                <div className='icon '>
                 <Image src={selectedCountry.icon} width={100} height={100} alt='img' className='img'/>
               </div>
@@ -47,7 +47,7 @@ export default function HomeDashboard() {
             </div>
             </div>
           ) : (
-            <div className='d-flex coun ' style={{alignItems:"center",height:"25px"}}>
+            <div className='d-flex  ' style={{alignItems:"center",height:"25px"}}>
             <div className='icon'>
              <Image src={nigeria} width={100} height={50} alt='img' className='img'/>
            </div>
