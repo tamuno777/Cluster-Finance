@@ -17,9 +17,9 @@ export default function Siginin() {
     const handleClick = () => {
       setLoadComponent(true);
     };
-    const handlelogin = () => {
-
-    }
+    const handleChange = (e) => {
+      // Handle the change if needed
+    };
   return (
     <div className='section'>
         <div className="section2">
@@ -51,6 +51,7 @@ export default function Siginin() {
     aria-describedby="inputGroupPrepend"
   required
   className='inpute'
+  onChange={handleChange}
   // value={password}
   // onChange={handlePasswordChange}
   size='lg'

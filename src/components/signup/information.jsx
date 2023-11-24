@@ -21,6 +21,9 @@ export default function Information() {
   const handleClick = () => {
     setLoadComponent(true);
   };
+  const handleChange = (e) => {
+    // Handle the change if needed
+  };
   return (
     <div className='section2' >
                     {!loadComponent ? (
@@ -38,7 +41,7 @@ export default function Information() {
  
 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
   <Form.Label className='label'>Full Name</Form.Label>
-  <Form.Control type="text" size="lg" required placeholder="Enter your Full Name" />
+  <Form.Control onChange={handleChange} type="text" size="lg" required placeholder="Enter your Full Name" />
 </Form.Group>
 
 
@@ -62,7 +65,7 @@ export default function Information() {
 
     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
   <Form.Label className='label'>Email address</Form.Label>
-  <Form.Control type="email" size="lg" className='inpute' required placeholder="name@example.com" />
+  <Form.Control type="email" onChange={handleChange} size="lg" className='inpute' required placeholder="name@example.com" />
 </Form.Group>
     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
   <Form.Label className='label'>Enter your Phone Number</Form.Label>

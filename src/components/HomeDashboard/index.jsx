@@ -38,7 +38,7 @@ export default function HomeDashboard() {
         <Dropdown.Toggle variant="white" className='diva2 dropdown2 d-flex p-3 border border-gry'  id="dropdown-basic">
           {selectedCountry ? (
             
-            <div className='d-flex coun' style={{height:"20px",backgroundColor:"gainsboro"}}>
+            <div className='d-flex coun' style={{height:"20px",backgroundColor:""}}>
                <div className='icon '>
                 <Image src={selectedCountry.icon} width={100} height={100} alt='img' className='img'/>
               </div>
@@ -87,14 +87,14 @@ export default function HomeDashboard() {
           <article  className='fourth-flex'>
             <Link href="/Bank" >
             <button>
-              <Image src={bank} width={100} height={100} className='inside'/>
+              <Image src={bank} width={100} height={100} alt='img' className='inside'/>
             </button>
             <p>Bank</p>
               
             </Link>
             <Link href="" className='ms-5 me-4'>
             <button>
-            <Image src={add} width={100} height={100} className='inside'/>
+            <Image src={add} width={100} height={100} alt='img' className='inside'/>
 
             </button>
             <p>Add</p>
@@ -102,7 +102,7 @@ export default function HomeDashboard() {
             </Link>
             <div className='ms-4 me-5'>
             <button> 
-            <Image src={arrow} width={100} height={100} className='inside'/>
+            <Image src={arrow} width={100} height={100} alt='img' className='inside'/>
 
                </button>
             <p>Transfer</p>
@@ -110,7 +110,7 @@ export default function HomeDashboard() {
             </div>
             <Link href="/Exchange">
             <button>
-            <Image src={round} width={100} height={100} className='inside'/>
+            <Image src={round} width={100} height={100} alt='img' className='inside'/>
 
             </button>
             <p>Exchange</p>

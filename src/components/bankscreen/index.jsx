@@ -15,6 +15,9 @@ export default function Bankscreen() {
   const handleSelect = (country) => {
     setSelectedCountry(country);
   };
+  const handleChange = (e) => {
+    // Handle the change if needed
+  };
   return (
     <div className='section'>
       <div className='container__div'>
@@ -80,7 +83,7 @@ export default function Bankscreen() {
            
           <Link href="" className=''>
             <button>
-            <Image src={add} width={100} height={100} className='inside'/>
+            <Image src={add} width={100} height={100} alt='img' className='inside'/>
 
             </button>
             <p>Add</p>
@@ -88,7 +91,7 @@ export default function Bankscreen() {
             </Link>
             <div className='arrow'>
             <button> 
-            <Image src={arrow} width={100} height={100} className='inside'/>
+            <Image src={arrow} width={100} height={100} alt='img' className='inside'/>
 
                </button>
             <p>Transfer</p>
@@ -96,7 +99,7 @@ export default function Bankscreen() {
             </div>
             <Link href="/Exchange">
             <button>
-            <Image src={round} width={100} height={100} className='inside'/>
+            <Image src={round} width={100} height={100} alt='img' className='inside'/>
 
             </button>
             <p>Exchange</p>

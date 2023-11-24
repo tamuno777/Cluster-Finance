@@ -18,6 +18,9 @@ export default function Exchangescreen() {
   const handlesecondSelect = (country) => {
     setsecondSelectedCountry(country);
   };
+  const handleChange = (e) => {
+    // Handle the change if needed
+  };
   return (
     <div className='section'>
       <div className='container__div'>
@@ -46,7 +49,7 @@ export default function Exchangescreen() {
                     <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <div className='d-flex form'>
-                    <Form.Control size='lg' type="tel" placeholder="#2000.oo" value= "$1.00" />
+                    <Form.Control size='lg' onChange={handleChange} type="tel" placeholder="#2000.oo" value= "$1.00" />
 
                         </div>
                     </Form.Group>
@@ -62,7 +65,7 @@ export default function Exchangescreen() {
                 <div>
                 <Form>
                 <div className='d-flex form'>
-              <Form.Control type="tel" placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
 
               <Dropdown className='phone__select w-80'>
         <Dropdown.Toggle variant="white" className='diva  dropdown d-flex p-3 border border-gry'  id="dropdown-basic">
@@ -124,7 +127,7 @@ export default function Exchangescreen() {
                 <div>
                 <Form >
                 <div className='d-flex form'>
-              <Form.Control type="tel" placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
 
               <Dropdown className='phone__select w-80'>
         <Dropdown.Toggle variant="white" className='diva  dropdown d-flex p-3 border border-gry'  id="dropdown-basic">

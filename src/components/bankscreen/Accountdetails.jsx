@@ -19,7 +19,7 @@ export default function Accountdetails() {
                 <p>John doe</p>
               </div>
               <button>
-            <Image src={copy} width={100} height={100} className='copy'/>
+            <Image src={copy} width={100} height={100 } alt='img' className='copy'/>
 
             </button>             </div>
              <div className='bank__div'>
@@ -28,7 +28,7 @@ export default function Accountdetails() {
                 <p>81 2342 2345</p>
               </div>
               <button>
-            <Image src={copy} width={100} height={100} className='copy'/>
+            <Image src={copy} width={100} height={100} alt='img' className='copy'/>
 
             </button>
              </div>
@@ -39,7 +39,7 @@ export default function Accountdetails() {
                 <p>Access bank</p>
               </div>
               <button>
-            <Image src={copy} width={100} height={100} className='copy'/>
+            <Image src={copy} width={100} height={100} alt='img' className='copy'/>
 
             </button>
              </div>

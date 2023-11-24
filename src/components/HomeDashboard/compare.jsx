@@ -11,6 +11,9 @@ export default function Compare() {
   const handleSelect = (country) => {
     setSelectedCountry(country);
   };
+  const handleChange = (e) => {
+    // Handle the change if needed
+  };
   return (
     <div>
          <div className='mt-4 currency'>
@@ -18,13 +21,13 @@ export default function Compare() {
             <article style={{alignItems:"center"}}>
               <Form>
               <div className='d-flex form'>
-              <Form.Control type="tel" placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
 
               <Dropdown className='phone__select w-80'>
         <Dropdown.Toggle variant="white" className='diva  dropdown d-flex p-3 border border-gry'  id="dropdown-basic">
           {selectedCountry ? (
             
-            <div className='d-flex coun' style={{height:"20px",backgroundColor:"gainsboro"}}>
+            <div className='d-flex coun' style={{height:"20px",backgroundColor:""}}>
                <div className='icon '>
                 <Image src={selectedCountry.icon} width={100} height={100} alt='img' className='img'/>
               </div>
@@ -46,7 +49,7 @@ export default function Compare() {
 
         <Dropdown.Menu className='menu'>
           {list.map((options) => (
-            <Dropdown.Item key={options.id}  onClick={() => handleSelect(options)}  className='d-flex gap-4 coun'>
+            <Dropdown.Item key={options.id} defaultValue={options.icon}  onClick={() => handleSelect(options)}  className='d-flex gap-4 coun'>
               <div className='icon'>
                 <Image src={options.icon} width={100} height={100} alt='img' className='img'/>
               </div>
@@ -63,13 +66,13 @@ export default function Compare() {
               <Form>
                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <div className='d-flex form'>
-              <Form.Control type="tel" placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
 
               <Dropdown className='phone__select2 w-80'>
         <Dropdown.Toggle variant="white" className='diva dropdown d-flex w-100 p-3 border border-gry'  id="dropdown-basic">
           {selectedCountry ? (
             
-            <div className='d-flex coun' style={{height:"20px",backgroundColor:"gainsboro"}}>
+            <div className='d-flex coun' style={{height:"20px",backgroundColor:""}}>
                <div className='icon '>
                 <Image src={selectedCountry.icon} width={100} height={100} alt='img' className='img'/>
               </div>
