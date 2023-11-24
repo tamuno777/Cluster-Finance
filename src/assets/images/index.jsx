@@ -21,9 +21,12 @@ import add from "./mingcute_add-line.png"
 import bank from "./ph_bank-bold.png"
 import bell from "./mingcute_notification-line.png"
 import filter from "./Vector.png"
+import ad from"./Frame 244.png"
+import gift from "./3d-render-gift-box-with-ribbon-present-package 1.png"
 
 export  {
     crossborder,
+    gift,
     filter,
     realtime,
     money,
@@ -32,6 +35,7 @@ export  {
     china,
     india,
     korea,
+    ad,
     uk,
     us,
     history,

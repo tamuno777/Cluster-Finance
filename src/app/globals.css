@@ -6,3 +6,27 @@
 
 }
 
+input[type="text"]::-webkit-input-placeholder {
+  color: #D2D2D2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+input[type="email"]::-webkit-input-placeholder {
+  color: #D2D2D2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+input[type="password"]::-webkit-input-placeholder {
+  color: #D2D2D2;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}

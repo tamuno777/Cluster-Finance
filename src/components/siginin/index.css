@@ -40,6 +40,9 @@ font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 22px; /* 157.143% */
+@media (max-width: 768px) {
+    padding: 17px;     
+ }
 }
 .form2{
     display: flex;

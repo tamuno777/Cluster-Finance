@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Compare from './compare';
 import Navbar from '../../sharedlayout/nav';
 import Image from 'next/image';
-import { nigeria,bell, eye, bank, add, arrow, round } from '../../assets/images';
+import { nigeria,bell, eye, bank, add, arrow, round, ad, copy } from '../../assets/images';
 export default function HomeDashboard() {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
@@ -43,7 +43,7 @@ export default function HomeDashboard() {
                 <Image src={selectedCountry.icon} width={100} height={100} alt='img' className='img'/>
               </div>
             <div className='mx-2'>
-              <p>{selectedCountry.sub}</p>
+              <p><span>{selectedCountry.headerText}</span> {selectedCountry.sub}</p>
             </div>
             </div>
           ) : (
@@ -128,6 +128,16 @@ export default function HomeDashboard() {
 
           <div>
             <Compare/>
+          </div>
+          <div className='addd mt-3'>
+            <div className='rounded p-4'>
+              <h3>Refer and Earn</h3>
+              <p>Refer a friend and receive $5 when the sign up and 
+recieves over $500 in their foreign account  </p>
+              <p>Referal code <span className='rounded'>2YWB38  <Image src={copy} width={20} height={20} alt='img' className=''/></span></p>
+
+            </div>
+
           </div>
           <div>
           <Navbar/>

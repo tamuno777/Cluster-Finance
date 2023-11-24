@@ -35,7 +35,7 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
         }
 }
 
@@ -93,6 +93,7 @@ line-height: 40px; /* 125% */
     justify-content: space-between;
     padding: 0;
 }
+
 .form2{
     display: flex;
     flex-direction: column;
@@ -135,6 +136,11 @@ justify-content: space-between !important;
 padding: 12px 17.998px 7px 16px;
 justify-content: center;
 align-items: flex-start;
+@media (max-width: 768px) {
+   padding: 0;
+   width: 200px !important;
+   align-items: center;        
+   }
 }
 .diva{
     display: flex;
@@ -180,6 +186,9 @@ justify-content: space-between !important;
 .diva .img{
     width: 35px;
     height: 35px;
+    @media (max-width: 768px) {
+        width: 15px;
+        height: 15px;            }
 }
 .menu{
     width: 100%;
@@ -192,10 +201,21 @@ justify-content: space-between !important;
 .menu .img {
     width: 35px;
     height: 35px;
+    @media (max-width: 768px) {
+        width: 15px;
+        height: 15px;            }
 }
+
 .dropdown .img {
     width: 35px;
     height: 35px;
+    @media (max-width: 768px) {
+        width: 20px;
+        height: 20px;  
+        
+    
+    }
+
 }
 
 .menu h2{
@@ -221,7 +241,19 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 40px; 
-align-items: center;}
+align-items: center;
+@media (max-width: 768px) {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+   display: flex;
+   align-items: center;
+   position: relative;
+   top: 10px ;      
+ }
+}
+
 .coun , .icon{
     align-items: center;
 }
