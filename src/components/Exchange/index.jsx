@@ -49,7 +49,7 @@ export default function Exchangescreen() {
                     <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <div className='d-flex form'>
-                    <Form.Control size='lg' onChange={handleChange} type="tel" placeholder="#2000.oo" value= "$1.00" />
+                    <Form.Control size='lg' onChange={handleChange} type="tel" placeholder="N2000.oo" value="" />
 
                         </div>
                     </Form.Group>
@@ -65,7 +65,7 @@ export default function Exchangescreen() {
                 <div>
                 <Form>
                 <div className='d-flex form'>
-              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="N1000" value= "" />
 
               <Dropdown className='phone__select w-80'>
         <Dropdown.Toggle variant="white" className='diva  dropdown d-flex p-3 border border-gry'  id="dropdown-basic">
@@ -185,13 +185,18 @@ export default function Exchangescreen() {
            
           
         </div>
+        <Button variant="primary" type="click" className='button mt-3' >
+          Continue
+
+      </Button>
         </div>
+       
 
         
-          <div className='navv'>
+          {/* <div className='navv'>
           <Navbar/>
 
-          </div>
+          </div> */}
        
       </div>
     </div>

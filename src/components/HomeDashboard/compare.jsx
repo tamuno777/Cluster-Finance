@@ -21,7 +21,7 @@ export default function Compare() {
             <article style={{alignItems:"center"}}>
               <Form>
               <div className='d-flex form'>
-              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="N1000" value= "" />
 
               <Dropdown className='phone__select w-80'>
         <Dropdown.Toggle variant="white" className='diva  dropdown d-flex p-3 border border-gry'  id="dropdown-basic">
@@ -66,7 +66,7 @@ export default function Compare() {
               <Form>
                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <div className='d-flex form'>
-              <Form.Control type="tel" onChange={handleChange} placeholder="#1,3333333" value= "$1.00" />
+              <Form.Control type="tel" onChange={handleChange} placeholder="$1.00" value= "" />
 
               <Dropdown className='phone__select2 w-80'>
         <Dropdown.Toggle variant="white" className='diva dropdown d-flex w-100 p-3 border border-gry'  id="dropdown-basic">

@@ -131,6 +131,10 @@ font-weight: 400;
 .form{
     justify-content: space-between;
     gap: 40px;
+    @media (max-width: 768px) {
+        /* flex-wrap: wrap; */
+        flex-direction: column-reverse;
+    }
 }
 .exchange__fee, .exchange__fee2{
     border-radius: 8px;

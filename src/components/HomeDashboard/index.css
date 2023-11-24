@@ -49,12 +49,12 @@
     width: 100%;
     margin: 10px 0;
     @media (max-width: 768px) {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
             }
 }
 .fourth-flex a{
     @media (max-width: 768px) {
-        margin: 0 !important;
+        margin: 0 10px !important;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -31,7 +31,7 @@ width: 100%;
     align-items: center;
     flex-direction: column;
     @media (max-width: 768px) {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
 }
 .button{
@@ -79,6 +79,7 @@ height: 349px; */
     @media (max-width: 768px) {
         width: 300px;
         height: 340px;
+
     }
 }
 .header{
@@ -119,6 +120,6 @@ line-height: normal;
     align-items: center;
     text-align: center;
     @media (max-width: 768px) {
-        height: 100px;
+        height: 350px;
             }
 }
