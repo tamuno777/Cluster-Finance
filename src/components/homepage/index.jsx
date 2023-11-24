@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Homepage.css"
+import "./homepage.css"
 import  Slider  from './slider'
 import Button from "react-bootstrap/Button"
 import Link from 'next/link'
